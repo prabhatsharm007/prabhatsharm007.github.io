@@ -1,1 +1,6 @@
 remote_theme: jekyll/minima
+title: "Clinical Bytes"
+description: "A blog about coding and tech"
+theme: minima
+url: "https://prabhatsharm007.github.io"
+github_username: prabhatsharm007
