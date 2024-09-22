@@ -4,4 +4,4 @@ title: About Me
 ---
 
 ## About Me
-I'm a developer passionate about building open-source projects. 
+I'm an MBBS final year student passionate about sharing my skills and knowledge
