@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClinicalBytes.me</title>
+    <title>{{ page.title }}</title> <!-- This will dynamically change the title based on the page -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,8 +11,8 @@
         <h1>ClinicalBytes.me</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="{{ site.baseurl }}/">Home</a></li>
+                <li><a href="{{ site.baseurl }}/about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -20,11 +20,7 @@
     </header>
 
     <main>
-        <section id="home">
-            <h2>Welcome to ClinicalBytes.me</h2>
-            <!-- Add your content here -->
-        </section>
-        <!-- Add more sections as needed -->
+        {{ content }}  <!-- This is where the content of index.md or about.md will be injected -->
     </main>
 
     <footer>
