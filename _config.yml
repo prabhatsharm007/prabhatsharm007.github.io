@@ -1,0 +1,6 @@
+title: My Jekyll Website
+description: >- 
+  This is my new Jekyll website created from scratch.
+baseurl: "" # leave this blank if you're not using a subdirectory
+url: "https://prabhatsharm007.github.io" # replace with your GitHub Pages URL
+theme: minima # basic theme to get you started
