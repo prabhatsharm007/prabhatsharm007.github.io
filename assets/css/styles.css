@@ -19,7 +19,7 @@
 
 .custom-header .nav-link {
     margin: 0 1rem;
-    color: #ffffff;
+    color: #ffffff; /* White text for contrast */
     text-decoration: none;
     padding: 0.5rem 1rem;
     border: 1px solid #ffffff; /* Border for demarcation */
