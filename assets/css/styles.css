@@ -6,17 +6,27 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 /* Custom header styles */
+.custom-header {
+    background-color: #007bff; /* Blue header */
+    padding: 1rem 0;
+}
+
+.custom-header .nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
 .custom-header .nav-link {
     margin: 0 1rem;
-    color: #000000; /* Make the text color black or any contrasting color */
+    color: #000000; /* Black text for contrast */
     text-decoration: none;
     padding: 0.5rem 1rem;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid #ffffff; /* Border for demarcation */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .custom-header .nav-link:hover {
-    background-color: #0056b3;
-    color: #ffffff;
+    transform: scale(1.1); /* Zoom effect */
 }
