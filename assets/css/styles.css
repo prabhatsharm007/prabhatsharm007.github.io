@@ -7,7 +7,7 @@
 </head>
 /* Custom header styles */
 .custom-header {
-    background-color: #f8f9fa;
+    background-color: #007bff; /* Blue header */
     padding: 1rem 0;
 }
 
@@ -19,11 +19,15 @@
 
 .custom-header .nav-link {
     margin: 0 1rem;
-    color: #007bff;
+    color: #ffffff;
     text-decoration: none;
-    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ffffff; /* Border for demarcation */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .custom-header .nav-link:hover {
-    color: #0056b3;
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #ffffff;
 }
