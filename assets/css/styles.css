@@ -24,10 +24,9 @@
     padding: 0.5rem 1rem;
     border: 1px solid #ffffff; /* Border for demarcation */
     border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .custom-header .nav-link:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    color: #ffffff;
+    transform: scale(1.1); /* Zoom effect */
 }
