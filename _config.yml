@@ -6,4 +6,5 @@ description: >-
   Explore articles, case studies, and tutorials aimed at enhancing your understanding of patient care, medical procedures, and the latest in medical education
 baseurl: "" # leave this blank if you're not using a subdirectory
 url: "https://prabhatsharm007.github.io" # replace with your GitHub Pages URL
-theme: minima # basic theme to get you started
+#theme: minima # basic theme to get you started
+theme: jekyll-theme-slate
