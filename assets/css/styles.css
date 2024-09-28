@@ -1,20 +1,20 @@
 /* Custom header styles */
 .custom-header {
-    background-color: #007bff; /* Blue header */
+    background-color: #f8f9fa; /* Light background */
     padding: 1rem 0;
-    color: white;
+    color: #003366; /* Dark blue color for text */
     display: flex;
     align-items: center;
 }
 
 .custom-header .brand-logo {
-    height: 50px;
-    margin-right: 15px;
+    height: 80px; /* Increase logo size */
+    margin-right: 20px;
 }
 
 .custom-header h1 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 2rem; /* Increase font size */
     color: #003366; /* Dark blue color */
 }
 
@@ -37,4 +37,24 @@
     background-color: #343a40; /* Dark background */
     color: white;
     padding: 1rem 0;
+}
+
+/* Ensure mobile responsiveness */
+@media (max-width: 768px) {
+    .custom-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .custom-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 5px 0;
+    }
 }
