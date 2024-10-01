@@ -3,11 +3,23 @@ layout: default
 title: Home
 ---
 
-## Blog Posts
+<div class="hero-section">
+    <img src="/assets/img/logo.png" alt="Clinical Bytes Logo" class="hero-logo">
+    <p>{{ site.description }}</p>
+</div>
 
-{% for post in site.posts %}
-  - [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
-{% endfor %}
-
-# Welcome to My Website
-This is the homepage of my new Jekyll website
+<div class="recent-blogs">
+    <h2>Recent Posts</h2>
+    <div class="row">
+        {% for post in site.posts limit:3 %}
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                    <p>{{ post.excerpt }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
