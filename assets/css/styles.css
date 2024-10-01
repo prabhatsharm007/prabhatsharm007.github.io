@@ -1,50 +1,58 @@
-/* Existing styles for custom header and nav bar */
+/* Custom header styles */
 .custom-header {
-    background-color: #007bff; /* Blue header */
-    padding: 1rem 0;
+    background-color: #007bff; /* Navy blue header */
+    padding: 0.5rem 0; /* Reduced padding for a smaller header */
 }
 
-.custom-header .nav {
+.custom-header .container {
     display: flex;
-    justify-content: center;
-    margin-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.custom-header .nav-link {
-    margin: 0 1rem;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border: 1px solid #ffffff; /* Border for demarcation */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease, color 0.3s ease;
+.brand-logo {
+    max-width: 100px; /* Smaller logo */
+    margin: 0; /* Remove margin */
 }
 
-.custom-header .nav-link:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    color: #ffffff;
+/* Adjusted navbar */
+.navbar {
+    padding: 1rem 0; /* Increase padding for a bigger navbar */
 }
 
-/* New styles for the hero section */
+.navbar-nav .nav-link {
+    padding: 1rem 1.5rem; /* Increase padding for larger clickable areas */
+    font-size: 1.1rem; /* Slightly larger font size */
+}
+
+/* Smaller hero section */
 .hero-section {
-    text-align: center;
-    padding: 2rem;
-    background-color: #007bff; /* Navy Blue Background */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    padding: 1.5rem; /* Smaller padding */
+    background-color: #007bff; /* Navy blue background */
     color: #ffffff;
+    height: 200px; /* Fixed height for a rectangular section */
 }
 
 .hero-logo {
-    max-width: 150px;
-    margin-bottom: 1rem;
+    max-width: 120px; /* Adjusted logo size */
+    margin-right: 1.5rem; /* Space between the logo and text */
 }
 
-/* New styles for recent blog posts */
+.hero-section p {
+    margin: 0;
+    font-size: 1.2rem; /* Font size for description */
+}
+
+/* Recent blog posts section remains unchanged */
 .recent-blogs h2 {
     text-align: center;
     margin: 2rem 0;
 }
 
-/* Additional spacing for cards in the recent blogs section */
+/* Card and button styles remain the same */
 .card-body {
     padding: 1.5rem;
     text-align: center;
@@ -53,7 +61,7 @@
 .card-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #007bff; /* Use the navy blue color */
+    color: #007bff; /* Navy blue title color */
 }
 
 .card-title a {
