@@ -1,60 +1,77 @@
-/* Custom header styles */
+/* Existing styles for custom header and nav bar */
 .custom-header {
-    background-color: #f8f9fa; /* Light background */
+    background-color: #007bff; /* Blue header */
     padding: 1rem 0;
-    color: #003366; /* Dark blue color for text */
+}
+
+.custom-header .nav {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
-.custom-header .brand-logo {
-    height: 80px; /* Increase logo size */
-    margin-right: 20px;
+.custom-header .nav-link {
+    margin: 0 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ffffff; /* Border for demarcation */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.custom-header h1 {
-    margin: 0;
-    font-size: 2rem; /* Increase font size */
-    color: #003366; /* Dark blue color */
+.custom-header .nav-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #ffffff;
 }
 
-.navbar-nav .nav-link {
-    color: #003366; /* Dark blue text */
-    transition: color 0.3s ease;
+/* New styles for the hero section */
+.hero-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #007bff; /* Navy Blue Background */
+    color: #ffffff;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #00509e; /* Lighter blue on hover */
+.hero-logo {
+    max-width: 150px;
+    margin-bottom: 1rem;
 }
 
-/* Custom main content styles */
-.custom-main {
-    padding: 2rem 0;
+/* New styles for recent blog posts */
+.recent-blogs h2 {
+    text-align: center;
+    margin: 2rem 0;
 }
 
-/* Custom footer styles */
-.custom-footer {
-    background-color: #343a40; /* Dark background */
-    color: white;
-    padding: 1rem 0;
+/* Additional spacing for cards in the recent blogs section */
+.card-body {
+    padding: 1.5rem;
+    text-align: center;
 }
 
-/* Ensure mobile responsiveness */
-@media (max-width: 768px) {
-    .custom-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff; /* Use the navy blue color */
+}
 
-    .custom-header h1 {
-        font-size: 1.5rem;
-    }
+.card-title a {
+    text-decoration: none;
+    color: inherit;
+}
 
-    .navbar-nav {
-        flex-direction: column;
-    }
+.card-title a:hover {
+    color: #0056b3;
+}
 
-    .navbar-nav .nav-link {
-        margin: 5px 0;
-    }
+/* Adjust the read more button */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
 }
