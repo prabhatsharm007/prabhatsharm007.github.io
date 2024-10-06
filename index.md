@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div class="hero-section">
-    <img src="/assets/img/default.png" alt="Clinical Bytes Logo" class="hero-logo">
+    <!-- <img src="/assets/img/default.png" alt="Clinical Bytes Logo" class="hero-logo"> -->
     <p>{{ site.description }}</p>
 </div>
 
