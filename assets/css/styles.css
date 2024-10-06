@@ -1,22 +1,17 @@
 /* Custom header styles */
 .custom-header {
-    background-color: #007bff; /* Navy blue header */
-    padding: 0.5rem 0; /* Reduced padding for a smaller header */
-}
-
-.custom-header .container {
+    height: 100vh; /* Full viewport height */
+    background: url('/assets/img/cover.png') no-repeat center center;
+    background-size: cover;
+    padding: 0; /* Remove padding to avoid extra space */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Center any content vertically */
+    justify-content: center; /* Center any content horizontally */
 }
 
-.brand-logo {
-    max-width: 100px; /* Smaller logo */
-    margin: 0; /* Remove margin */
-}
-
-/* Adjusted navbar */
+/* Ensure the navbar appears below the header */
 .navbar {
+    margin-top: 0; /* Ensure no extra margin */
     padding: 1rem 0; /* Increase padding for a bigger navbar */
 }
 
